@@ -19,7 +19,7 @@ load_dotenv()
 # Page config
 st.set_page_config(
     page_title="Stock Sense",
-    page_icon="📦",
+    page_icon=":package:",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -130,7 +130,7 @@ def get_demand_cv():
 # Sidebar
 # ---------------------------------------------------------------------------
 
-st.sidebar.title("📦 Stock Sense")
+st.sidebar.title("Stock Sense")
 st.sidebar.markdown("---")
 
 store_id = st.sidebar.selectbox("Store", ["Store_1", "Store_2", "Store_3"])
@@ -189,12 +189,12 @@ hist_sales = all_sales[-hist_window:]
 # ---------------------------------------------------------------------------
 
 tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
-    "📈 Forecast",
-    "📊 Benchmark",
-    "🎯 Decision",
-    "🔍 Decomposition",
-    "🔬 Diagnostics",
-    "🗂️ Portfolio",
+    "Forecast",
+    "Benchmark",
+    "Decision",
+    "Decomposition",
+    "Diagnostics",
+    "Portfolio",
 ])
 
 # ===========================================================================
